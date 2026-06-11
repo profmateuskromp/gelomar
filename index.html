@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gelomar</title>
+    <title>Sorveteria Gelomar - Desde 1975 em Ivaí</title>
     <link rel="stylesheet" href="style.css">
     <!-- Importação de fonte bonita do Google Fonts -->
     <link href="https://googleapis.com" rel="stylesheet">
@@ -17,9 +17,8 @@
             <a href="#sobre">Nossa História</a>
             <a href="#cardapio">Cardápio</a>
             <a href="#eventos">Festas & Gelo</a>
-            <a href="#contato">Localização</a>
+            <a href="#contato">Localização & Contato</a>
         </nav>
-    </nav>
     </header>
 
     <!-- Banner Principal -->
@@ -27,7 +26,7 @@
         <div class="hero-content">
             <h1>Tradição & Sabor desde 1975</h1>
             <p>A receita exclusiva que conquistou o município de Ivaí.</p>
-            <a href="#cardapio" class="btn">Conheça Nossos Sabores</a>
+            <a href="#cardapio" class="btn">Conheça Nosso Cardápio</a>
         </div>
     </section>
 
@@ -54,17 +53,26 @@
                 <div class="card-produto">
                     <div class="icon-produto">🍦</div>
                     <h3>Self-Service</h3>
-                    <p>Variedade incrível de massas artesanais, gelatos cremosos e açaí completo com os seus acompanhamentos favoritos.</p>
+                    <div class="preco">R$ 5,50 <span class="unidade">/ 100g</span></div>
+                    <p>Variedade incrível de massas artesanais, gelatos cremosos e açaí completo com acompanhamentos.</p>
                 </div>
                 <div class="card-produto">
                     <div class="icon-produto">🍡</div>
                     <h3>Picolés</h3>
+                    <div class="preco"><span class="a-partir">a partir de</span>R$ 1,50</div>
                     <p>Opções frutadas e cremosas perfeitas para espantar o calor a qualquer hora do dia.</p>
                 </div>
                 <div class="card-produto">
                     <div class="icon-produto">🍫</div>
                     <h3>Moreninhas</h3>
-                    <p>O clássico e irresistível picolé com uma casquinha de chocolate crocante e recheio cremoso tradicional.</p>
+                    <div class="preco"><span class="a-partir">a partir de</span>R$ 2,50</div>
+                    <p>O clássico e irresistível picolé com uma casquinha de chocolate crocante e recheio cremoso.</p>
+                </div>
+                <div class="card-produto">
+                    <div class="icon-produto">🍨</div>
+                    <h3>Potes de Massa</h3>
+                    <div class="preco"><span class="a-partir">a partir de</span>R$ 15,00</div>
+                    <p>Leve para casa nossos potes com massas tradicionais, açaí puro ou gelatos super cremosos.</p>
                 </div>
             </div>
         </div>
@@ -75,12 +83,28 @@
         <div class="container text-center">
             <h2>Atendimento a Festas & Eventos</h2>
             <div class="divider"></div>
-            <p class="lead">Fazemos a entrega de gelo ideal para manter as bebidas da sua festa perfeitamente geladas!</p>
+            <p class="lead">Atendemos <strong>Ivaí e toda a região</strong>! Fazemos a entrega do gelo ideal para manter as bebidas da sua festa perfeitamente geladas.</p>
             
             <div class="grid-gelo">
-                <div class="item-gelo">❄️ Gelo em Escamas</div>
-                <div class="item-gelo">🧊 Gelo em Cubinhos</div>
-                <div class="item-gelo">🧊 Gelo em Barras</div>
+                <div class="item-gelo">
+                    <span class="nome-gelo">❄️ Gelo em Escamas</span>
+                    <span class="preco-gelo">R$ 10,00</span>
+                </div>
+                <div class="item-gelo">
+                    <span class="nome-gelo">🧊 Gelo em Cubinhos</span>
+                    <span class="preco-gelo">R$ 8,00</span>
+                </div>
+                <div class="item-gelo">
+                    <span class="nome-gelo">🧊 Gelo em Barras</span>
+                    <span class="preco-gelo">R$ 10,00</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <!-- Link do WhatsApp para pedidos de eventos -->
+                <a href="https://wa.me." target="_blank" class="btn btn-whatsapp">
+                    📱 Encomendar para seu Evento
+                </a>
             </div>
         </div>
     </section>
@@ -94,10 +118,15 @@
                 <p>📍 Encontre a nossa loja física no centro de Ivaí.</p>
                 <p>🕒 Aberto todos os dias para adoçar a sua rotina.</p>
                 
-                <!-- Link para o Instagram -->
-                <div class="social-box">
+                <div class="botoes-contato">
+                    <!-- Link para o WhatsApp -->
+                    <a href="https://wa.me." target="_blank" class="btn-whatsapp-direto">
+                        💬 Fale conosco no WhatsApp
+                    </a>
+                    
+                    <!-- Link para o Instagram -->
                     <a href="https://instagram.com" target="_blank" class="btn-instagram">
-                         Siga-nos no Instagram @gelomar_ivai
+                        📸 Siga no Instagram @gelomar_ivai
                     </a>
                 </div>
             </div>
@@ -126,7 +155,7 @@
     <footer>
         <p>&copy; 2026 Sorveteria Gelomar. Desde 1975 servindo tradição em Ivaí - PR.</p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
